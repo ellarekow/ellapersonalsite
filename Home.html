@@ -2,11 +2,21 @@
 <html>
 
 <head>
-    <title>Ella Rekow</title>
+    <meta charset="utf-8">
+    <title>Hello World</title>
 </head>
 
 <body>
-    Welcome to the portfolio... It's under construction at the moment...
+    <script src="pixi/pixi.min.js"></script>
+    <script src="applicationStuff.js"></script>
+    <script type="text/javascript">
+        let type = "WebGL";
+        if (!PIXI.utils.isWebGLSupported()) {
+            type = "canvas";
+        }
+
+        PIXI.utils.sayHello(type);
+    </script>
 </body>
 
 </html>
